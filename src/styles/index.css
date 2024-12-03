@@ -1,12 +1,118 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-/* 
+.container {
+    margin: 2rem auto;
+    min-height: 300px;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: rgb(249, 248, 248);
+    border: 1px solid #06603682;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h1 {
+    color: #06603682;
+    font-size: calc(2.5rem + 1vw);
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-*/
+.input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #06603682;
+    border-radius: 1rem;
+    outline: none;
+    color: rgb(125 171 150 / 56%);
+    font-size: 1rem;
+}
+
+.input::placeholder {
+    color: rgb(125 171 150 / 56%);
+}
+
+.list {
+    max-width: 450px;
+    margin: 1rem auto;
+    border: 1px solid #0de88282;
+    border-radius: 1rem;
+    background-color: rgb(233, 220, 220);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 1rem 3rem;
+    list-style-type: none;
+    border-top: 1px solid #06603682;
+    color: #06603682;
+}
+
+li:first-child {
+    border-top: none;
+}
+
+
+.delete {
+    visibility: hidden;
+    background: none;
+    border: none;
+    color: #0a834b;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.delete:hover {
+    opacity: 1;
+}
+
+li:hover .delete {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+
+p {
+    margin: 0;
+    padding: 1rem;
+    text-align: start;
+    font-size: 0.9rem;
+    color: rgb(125 171 150 / 56%);
+    border-top: 1px solid #06603682;
+}
+
+
+.btn-success {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(125 171 150 / 56%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #7dab96;
+}
